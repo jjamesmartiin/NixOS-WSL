@@ -36,7 +36,7 @@
 
       nixosConfigurations = {
         default = lib.nixosSystem {
-          system = "x86_64-linux";
+          system = "aarch64-linux";
           modules = [
             self.nixosModules.default
             ({ config, lib, pkgs, ... }: {
